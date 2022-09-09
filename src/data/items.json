@@ -1,0 +1,43 @@
+[{
+        "id": 1,
+        "name": "Terra Yellow: iPhone 13 PRO",
+        "price": 13.99,
+        "description": "gssgrg",
+        "imgUrl": "/images/CASE_VYNIL.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Swim Blue: iPhone 13 PRO",
+        "price": 13.99,
+        "description": "gssgrg",
+        "imgUrl": "/images/CASE_VYNIL.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Shy Red: iPhone 13 PRO",
+        "price": 13.99,
+        "description": "sdgd",
+        "imgUrl": "/images/CASE_VYNIL.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Crystal Clear: iPhone 13 PRO",
+        "price": 13.99,
+        "description": "sdgsdd",
+        "imgUrl": "/images/CASE_VYNIL.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Momento Tech: iPhone 13",
+        "price": 13.99,
+        "description": "dsgsd",
+        "imgUrl": "/images/CASE_VYNIL.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Orbity: iPhone 13",
+        "price": 13.99,
+        "description": "sdfgsdgd",
+        "imgUrl": "/images/CASE_VYNIL.jpg"
+    }
+]
