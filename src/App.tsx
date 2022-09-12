@@ -4,11 +4,13 @@ import { Home }  from "./pages/Home";
 import { Store }  from "./pages/Store";
 import { About }  from "./pages/About";
 import { Navbar } from "./components/Navbar";
-
+import "./App.css"
 
 function App() {
   return (
-    <><Navbar />
+    
+    <div className="bg">
+    <Navbar />
     <Container className="mb-4">
       <Routes>
         <Route path="/" element={<Home />} />
@@ -16,7 +18,8 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
     </Container>
-    </>
+</div>
+    
   )
 }
 

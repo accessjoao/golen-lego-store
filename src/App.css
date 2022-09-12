@@ -1,0 +1,13 @@
+body,
+html {
+    height: 100%;
+}
+
+.bg {
+    background-image: url("https://www.lego.com/cdn/cs/set/assets/blt825bd369b4d1e4be/Z6_Tokyo.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
