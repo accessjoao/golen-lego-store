@@ -6,11 +6,12 @@ import { About }  from "./pages/About";
 import { Navbar } from "./components/Navbar";
 import "./App.css"
 import image from "../public/images/Lego_Background_1.jpg"
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 
 function App() {
   return (
-    
     <div className="bg">
+    <ShoppingCartProvider>
     <Navbar />
     <Container className="mb-4">
       <Routes>
@@ -19,8 +20,8 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
     </Container>
-</div>
-    
+</ShoppingCartProvider>
+    </div>
   )
 }
 

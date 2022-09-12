@@ -5,7 +5,7 @@ export function Navbar() {
   return (
     <NavbarBs sticky="top" className="bg-white shadow-sm mb-3 opacity-75">
       <Container>
-      <Nav className="me-auto">
+      <Nav className="me-auto fs-4 fw-bold">
           <Nav.Link to="/" as={NavLink}>
             Home
           </Nav.Link>
