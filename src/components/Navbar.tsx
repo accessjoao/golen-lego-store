@@ -5,9 +5,9 @@ import { useShoppingCart } from "../context/ShoppingCartContext";
 export function Navbar() {
   const { openCart, cartQuantity } = useShoppingCart();
   return (
-    <NavbarBs sticky="top" className="bg-white shadow-sm mb-3 opacity-75">
+    <NavbarBs sticky="top" className="shadow-sm" style={{ backgroundColor: "#87a1a2" }}>
       <Container>
-        <Nav className="me-auto fs-4 fw-bold">
+        <Nav className="me-auto mb-3 fs-4 fw-bold">
           <Nav.Link to="/" as={NavLink}>
             Home
           </Nav.Link>

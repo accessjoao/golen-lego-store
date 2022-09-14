@@ -4,15 +4,18 @@ import { useShoppingCart } from "../context/ShoppingCartContext"
 import { currencyFormat } from "../utilities/currencyFormat"
 import storeItems from "../data/items.json"
 import { CartItem } from "./CartItem"
+import storeBackground from "../../public/images/Lego_Batman.jpg"
 
 type ShoppingCartProps = {
   isOpen: boolean
 }
 
+ //  
+
 export function ShoppingCart({ isOpen }: ShoppingCartProps) {
   const { closeCart, cartItems } = useShoppingCart()
   return (
-    <Offcanvas show={isOpen} onHide={closeCart} placement="end">
+    <Offcanvas show={isOpen} onHide={closeCart} placement="end" style={{ backgroundImage: `url(${storeBackground})`, height:"100vh", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover", overflow:"auto" }}>
       <Offcanvas.Header closeButton>
         <Offcanvas.Title>Cart</Offcanvas.Title>
       </Offcanvas.Header>

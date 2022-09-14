@@ -1,43 +1,49 @@
 [{
         "id": 1,
-        "name": "Terra Yellow",
-        "price": 13.99,
-        "description": "gssgrg",
-        "imgUrl": "/images/CASE_VYNIL.jpg"
+        "name": "Lloyd's Golden Ultra Dragon",
+        "price": 199.99,
+        "description": "Dragon and ninja playset: Kids can relive adventures from the NINJAGO: Crystallized TV series with this LEGO NINJAGO Lloyd's Golden Ultra Dragon",
+        "category": "Full Set",
+        "imgUrl": "/images/Lego_Ninjago.jpg"
     },
     {
         "id": 2,
-        "name": "Swim Blue",
-        "price": 13.99,
-        "description": "gssgrg",
-        "imgUrl": "/images/CASE_VYNIL2.jpg"
+        "name": "Star Wars Darth Vader Helmet",
+        "price": 99.99,
+        "description": "The iconic design of Darth Vader's Helmet is recreated in LEGO bricks to spark memories of classic Star Wars saga scenes, and the display stand with nameplate completes an impressive centerpiece.",
+        "category": "Decorative Item",
+        "imgUrl": "/images/Lego_Darth.jpg"
     },
     {
         "id": 3,
-        "name": "Shy Red",
-        "price": 13.99,
-        "description": "sdgd",
-        "imgUrl": "/images/CASE_VYNIL3.jpg"
+        "name": "Harry Potter Hogwarts Carriage and Thestrals",
+        "price": 39.99,
+        "description": "Iconic characters - Includes Harry Potter and Luna Lovegood minifigures, an adult and baby Thestral, plus a buildable carriage that attaches to the adult Thestral",
+        "category": "Full Set",
+        "imgUrl": "/images/Lego_Potter.jpg"
     },
     {
         "id": 4,
-        "name": "Crystal Clear",
-        "price": 13.99,
-        "description": "sdgsdd",
-        "imgUrl": "/images/CASE_CRYSTAL.jpg"
+        "name": "Friends Olivia's Space Academy",
+        "price": 79.99,
+        "description": "Spaceship toy with authentic details - Showcasing features from the Space Shuttle program, this set includes a Space Shuttle model, an academy building, telescope and 4 LEGO Friends characters.",
+        "category": "Full Set",
+        "imgUrl": "/images/Lego_Olivia.jpg"
     },
     {
         "id": 5,
-        "name": "Momento Tech",
-        "price": 13.99,
-        "description": "dsgsd",
-        "imgUrl": "/images/CASE_CRYSTAL1.jpg"
+        "name": "Technic Monster Jam Max-D",
+        "price": 24.99,
+        "description": "This cool Max-D 2-in-1 monster truck toy rebuilds into a pull-back quad bike, so playtime lasts even longer. With pull-back action, it's easy for kids to power their truck and quad bike. Simply pull back and let go to send them speeding along",
+        "category": "Decorative Item",
+        "imgUrl": "/images/Lego_Monster.jpg"
     },
     {
         "id": 6,
-        "name": "Orbity",
-        "price": 13.99,
-        "description": "sdfgsdgd",
-        "imgUrl": "/images/CASE_PROTECTOR.jpg"
+        "name": "Friends Central Perk Building",
+        "price": 129.99,
+        "description": "Here's a LEGO brick-built version of the famous CENTRAL PERK café packed with authentic details to inspire hilarious memories of the classic Friends TV show and to show off to your own friends.",
+        "category": "Full Set",
+        "imgUrl": "/images/Lego_Friends.jpg"
     }
 ]
