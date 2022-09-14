@@ -1,10 +1,10 @@
 
-import { Offcanvas, Stack } from "react-bootstrap"
+import { Button, Offcanvas, Stack } from "react-bootstrap"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import { currencyFormat } from "../utilities/currencyFormat"
 import storeItems from "../data/items.json"
 import { CartItem } from "./CartItem"
-import storeBackground from "../../public/images/Lego_Batman.jpg"
+import storeBackground from "../../public/images/Lego_Background_Star.jpg"
 
 type ShoppingCartProps = {
   isOpen: boolean
@@ -24,7 +24,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
           {cartItems.map(item => (
             <CartItem key={item.id} {...item} />
           ))}
-          <div className="ms-auto fw-bold fs-5">
+          <div className="d-flex align-items-center flex-column ms-auto fw-bold fs-5 p-3 rounded-2" style={{ backgroundColor: "white" }}>
             Total{" "}
             {currencyFormat(
               cartItems.reduce((total, cartItem) => {
@@ -32,6 +32,10 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
                 return total + (item?.price || 0) * cartItem.quantity
               }, 0)
             )}
+            <div>
+              <br />
+            <Button className="btn-success">Secure Check Out</Button>
+            </div>
           </div>
         </Stack>
       </Offcanvas.Body>

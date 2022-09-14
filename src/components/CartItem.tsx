@@ -13,10 +13,10 @@ export function CartItem({ id, quantity }: CartItemProps) {
   const item = storeItems.find(i => i.id === id)
   if (item == null) return null
 
- 
+ // color to match picture: backgroundColor: "#d4d4d4"
 
   return (
-    <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
+    <Stack direction="horizontal" gap={2} className="d-flex align-items-center p-3 rounded-2" style={{ backgroundColor: "white" }}>
       <img
         src={item.imgUrl}
         style={{ width: "125px", height: "75px", objectFit: "cover" }}

@@ -40,7 +40,7 @@ export function StoreItem({
         <br />
         <div className="d-flex flex-direction-row justify-content-center mt-auto">
         {quantity === 0 ? (
-            <Button className="w-100" onClick={() => increaseCartQuantity(id)}>
+            <Button variant="warning" className="w-50 fw-bold" onClick={() => increaseCartQuantity(id)}>
               + Add To Cart
             </Button>
           ) : (
@@ -52,18 +52,19 @@ export function StoreItem({
                 className="d-flex align-items-center justify-content-center"
                 style={{ gap: ".5rem" }}
               >
-                <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
-                <div>
+                <Button className="btn-lg" variant="warning" onClick={() => increaseCartQuantity(id)}>+</Button>
+                <Button className="btn-lg" variant="warning" onClick={() => decreaseCartQuantity(id)}>-</Button>
+              </div>
+              <div>
                   <span className="fs-3">{quantity}</span> in cart
                 </div>
-                <Button onClick={() => increaseCartQuantity(id)}>+</Button>
-              </div>
               <Button
+
                 onClick={() => removeFromCart(id)}
+                className="btn-xs"
                 variant="danger"
-                size="sm"
               >
-                Remove
+                Remove All
               </Button>
             </div>
           )}
