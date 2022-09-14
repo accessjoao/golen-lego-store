@@ -5,6 +5,7 @@ import { currencyFormat } from "../utilities/currencyFormat"
 import storeItems from "../data/items.json"
 import { CartItem } from "./CartItem"
 import storeBackground from "../../public/images/Lego_Background_Star.jpg"
+import { CheckoutButtonModal } from "./CheckoutButtonModal"
 
 type ShoppingCartProps = {
   isOpen: boolean
@@ -34,7 +35,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
             )}
             <div>
               <br />
-            <Button className="btn-success">Secure Check Out</Button>
+            <CheckoutButtonModal />
             </div>
           </div>
         </Stack>
