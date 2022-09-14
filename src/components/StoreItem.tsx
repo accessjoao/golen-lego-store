@@ -2,6 +2,7 @@ import { Button, Card } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { currencyFormat } from "../utilities/currencyFormat";
 import "../App.css"
+import { StoreItemModal } from "./StoreItemModal";
 
 type StoreItemProps = {
   id: number;
@@ -37,6 +38,7 @@ export function StoreItem({
           <span className="ms-2 text-muted">{currencyFormat(price)}</span>
         </Card.Title>
         <span className="fs-5">{category}</span>
+        <StoreItemModal />
         <br />
         <div className="d-flex flex-direction-row justify-content-center mt-auto">
         {quantity === 0 ? (
