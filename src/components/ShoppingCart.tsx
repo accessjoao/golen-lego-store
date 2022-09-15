@@ -13,8 +13,6 @@ type ShoppingCartProps = {
   isOpen: boolean
 }
 
- //  
-
 export function ShoppingCart({ isOpen }: ShoppingCartProps) {
   
   const { closeCart, cartItems } = useShoppingCart()
@@ -23,7 +21,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
 
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
-  const handleClose = () => [setShow(false), navigate('/'), closeCart()];
+  const handleClose = () => [setShow(false), navigate('/about'), closeCart()];
 
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end" style={{ backgroundImage: `url(${storeBackground})`, height:"100vh", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover", overflow:"auto" }}>
@@ -48,7 +46,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
 
               <div>
       <Button variant="success" onClick={handleShow}>
-        Secure Check Out
+        Secure Checkout
       </Button>
 
       <Modal show={show} onHide={handleClose}>

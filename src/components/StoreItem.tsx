@@ -82,20 +82,22 @@ export function StoreItem({
                 className="d-flex align-items-center justify-content-center"
                 style={{ gap: ".5rem" }}
               >
-                <Button className="btn-lg" variant="warning" onClick={() => increaseCartQuantity(id)}>+</Button>
                 <Button className="btn-lg" variant="warning" onClick={() => decreaseCartQuantity(id)}>-</Button>
+                <Button className="btn-lg" variant="warning" onClick={() => increaseCartQuantity(id)}>+</Button>
+                
               </div>
               <div>
                   <span className="fs-3">{quantity}</span> in cart
                 </div>
+                {/* 
               <Button
-
                 onClick={() => removeFromCart(id)}
                 className="btn-xs"
                 variant="danger"
               >
                 Remove All
               </Button>
+              */}
             </div>
           )}
         </div>
