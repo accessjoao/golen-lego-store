@@ -34,7 +34,7 @@ export function StoreItem({
       <Card.Img
         variant="top"
         src={imgUrl}
-        height="450px"
+        height="370px"
         style={{ objectFit: "fill" }}
       />
       <Card.Body className="d-flex flex-column">

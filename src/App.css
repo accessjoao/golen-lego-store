@@ -23,3 +23,7 @@ html {
 .card:hover {
     transform: scale(0.95);
 }
+
+.font-link {
+    font-family: 'Barlow Condensed', sans-serif;
+}

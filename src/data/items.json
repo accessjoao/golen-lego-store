@@ -11,7 +11,7 @@
         "name": "Star Wars Darth Vader Helmet",
         "price": 99.99,
         "description": "The iconic design of Darth Vader's Helmet is recreated in LEGO bricks to spark memories of classic Star Wars saga scenes, and the display stand with nameplate completes an impressive centerpiece.",
-        "category": "One Item",
+        "category": "Decorative Item",
         "imgUrl": "/images/Lego_Darth.jpg"
     },
     {
@@ -32,11 +32,11 @@
     },
     {
         "id": 5,
-        "name": "Technic Monster Jam Max-D",
-        "price": 24.99,
-        "description": "This cool Max-D 2-in-1 monster truck toy rebuilds into a pull-back quad bike, so playtime lasts even longer. With pull-back action, it's easy for kids to power their truck and quad bike. Simply pull back and let go to send them speeding along.",
-        "category": "One Item",
-        "imgUrl": "/images/Lego_Monster.jpg"
+        "name": "Mandalorian Helmet",
+        "price": 94.99,
+        "description": "Add to your collection - The Mandalorian Helmet is part of a range of collectible LEGO Star Wars build-to-display helmet models, each designed to offer an immersive and rewarding creative challenge. Treat yourself or give this 584-piece set as a birthday present, holiday gift or special surprise to a Star Wars: The Mandalorian fan or LEGO Star Wars collector.",
+        "category": "Decorative Item",
+        "imgUrl": "/images/Lego_Mandalorian.jpg"
     },
     {
         "id": 6,
@@ -45,5 +45,29 @@
         "description": "Here's a LEGO brick-built version of the famous CENTRAL PERK café packed with authentic details to inspire hilarious memories of the classic Friends TV show and to show off to your own friends.",
         "category": "Full Set",
         "imgUrl": "/images/Lego_Friends.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Heartlake City Pizzeria",
+        "price": 29.99,
+        "description": "Gift for pizza lovers – Includes LEGO Friends Olivia and Ethan, a separate outdoor seating area, pretend pizza oven, pizza paddle, skateboard and food toys such as cheese, a grater and a sauce bottles. A gift to get the creative juices flowing – Designed for kids aged 5 and up, this buildable playset brings restaurant fun to kids' bedrooms.",
+        "category": "Full Set",
+        "imgUrl": "/images/Lego_Pizza.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Marvel Venom",
+        "price": 54.99,
+        "description": "Classic Marvel character - Kids assemble the 297-piece figure into a realistic recreation of Venom, the alien enemy of Spider-Man. All parts of the buildable Venom are articulated, so kids can move, position and pose the figure just like the real thing.",
+        "category": "Decorative Item",
+        "imgUrl": "/images/Lego_Venom.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Friends Water Park",
+        "price": 29.99,
+        "description": "Includes 3 characters - Comes with 2 mini-dolls, including LEGO Friends Olivia and a micro-doll, and buildable toy activities based on a real-world water park.",
+        "category": "Full Set",
+        "imgUrl": "/images/Lego_Park.jpg"
     }
 ]
