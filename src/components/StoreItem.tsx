@@ -1,8 +1,8 @@
-import { Button, Card } from "react-bootstrap";
+import { Button, Card, Modal, ModalDialog } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { currencyFormat } from "../utilities/currencyFormat";
 import "../App.css"
-import { StoreItemModal } from "./StoreItemModal";
+import { useState } from "react";
 
 type StoreItemProps = {
   id: number;
@@ -24,6 +24,11 @@ export function StoreItem({
   const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart();
   const quantity = getItemQuantity(id);
 
+  // Handling Modal
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <Card className="card p-2 h-100">
       <Card.Img
@@ -35,11 +40,34 @@ export function StoreItem({
       <Card.Body className="d-flex flex-column">
         <Card.Title className="d-flex justify-content-between align-items-baseline bb-4">
           <span className="fs-2">{name}</span>
+          <div className="d-flex flex-column">
           <span className="ms-2 text-muted">{currencyFormat(price)}</span>
+          <br />
+          <h1 className="fs-5">{category}</h1>
+          </div>
         </Card.Title>
-        <span className="fs-5">{category}</span>
-        <StoreItemModal />
+        <Button variant="warning" onClick={handleShow}>
+          Product Info
+      </Button>
         <br />
+        <div>
+    
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{name}</Modal.Title>
+        </Modal.Header>
+        <Card.Img variant="top"
+        src={imgUrl}
+        height="500px"
+        style={{ objectFit: "fill" }}/>
+        <Modal.Body>{description}</Modal.Body>
+      </Modal>
+    </div>
+
+
+        <br />
+          
         <div className="d-flex flex-direction-row justify-content-center mt-auto">
         {quantity === 0 ? (
             <Button variant="warning" className="w-50 fw-bold" onClick={() => increaseCartQuantity(id)}>
@@ -71,6 +99,7 @@ export function StoreItem({
             </div>
           )}
         </div>
+        
       </Card.Body>
     </Card>
   )
