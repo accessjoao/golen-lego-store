@@ -6,8 +6,8 @@ import { useShoppingCart } from "../context/ShoppingCartContext"
 import { currencyFormat } from "../utilities/currencyFormat"
 import storeItems from "../data/items.json"
 import { CartItem } from "./CartItem"
-import storeBackground from "../../public/images/Lego_Background_Star.jpg"
-import thanksImage from "../../public/images/Lego_Avengers.jpeg"
+import storeBackground from "../images/Lego_Background_Star.jpg"
+import thanksImage from "../images/Lego_Avengers.jpeg"
 
 type ShoppingCartProps = {
   isOpen: boolean

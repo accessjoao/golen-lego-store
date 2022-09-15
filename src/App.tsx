@@ -5,7 +5,7 @@ import { Store }  from "./pages/Store";
 import { About }  from "./pages/About";
 import { Navbar } from "./components/Navbar";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
-import backgroundImage1 from "../public/images/Lego_Background_1.jpg"
+import backgroundImage1 from "./images/Lego_Background_1.jpg"
 import "./App.css"
 
 function App() {
