@@ -34,7 +34,7 @@ export function StoreItem({
       <Card.Img
         variant="top"
         src={imgUrl}
-        height="460px"
+        height="450px"
         style={{ objectFit: "fill" }}
       />
       <Card.Body className="d-flex flex-column">
@@ -61,7 +61,7 @@ export function StoreItem({
         src={imgUrl}
         height="500px"
         style={{ objectFit: "fill" }}/>
-        <Modal.Body>{description}</Modal.Body>
+        <Modal.Body className="fw-bold">{description}</Modal.Body>
       </Modal>
     </div>
 

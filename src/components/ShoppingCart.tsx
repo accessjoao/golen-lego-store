@@ -1,11 +1,13 @@
 
-import { Button, Offcanvas, Stack } from "react-bootstrap"
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import { Button, Offcanvas, Stack, Modal, Card } from "react-bootstrap"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import { currencyFormat } from "../utilities/currencyFormat"
 import storeItems from "../data/items.json"
 import { CartItem } from "./CartItem"
 import storeBackground from "../../public/images/Lego_Background_Star.jpg"
-import { CheckoutButtonModal } from "./CheckoutButtonModal"
+import thanksImage from "../../public/images/Lego_Avengers.jpeg"
 
 type ShoppingCartProps = {
   isOpen: boolean
@@ -14,7 +16,15 @@ type ShoppingCartProps = {
  //  
 
 export function ShoppingCart({ isOpen }: ShoppingCartProps) {
+  
   const { closeCart, cartItems } = useShoppingCart()
+
+  const navigate = useNavigate();
+
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => [setShow(false), navigate('/'), closeCart()];
+
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end" style={{ backgroundImage: `url(${storeBackground})`, height:"100vh", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover", overflow:"auto" }}>
       <Offcanvas.Header closeButton>
@@ -35,7 +45,22 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
             )}
             <div>
               <br />
-            <CheckoutButtonModal />
+
+              <div>
+      <Button variant="success" onClick={handleShow}>
+        Secure Check Out
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Thank You for stopping by! =D</Modal.Title>
+        </Modal.Header>
+        <Card.Img variant="top"
+        src={thanksImage}
+        height="460px"
+        style={{ objectFit: "fill" }}/>
+      </Modal>
+    </div>
             </div>
           </div>
         </Stack>
