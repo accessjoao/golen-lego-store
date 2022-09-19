@@ -55,7 +55,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
         </Modal.Header>
         <Card.Img variant="top"
         src={thanksImage}
-        height="460px"
+        height="500px"
         style={{ objectFit: "fill" }}/>
       </Modal>
     </div>
