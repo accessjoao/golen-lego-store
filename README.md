@@ -1,6 +1,6 @@
 # Welcome to the Golden Lego Store!
 
-## I created this online store front end application to show my skills using Typescript and React.
+## I created this online store front end application to show my skills using Typescript and React/Vite.
 
 ## The styling was done using CSS, Bootstrap, Canvas, and Google Fonts.
 
