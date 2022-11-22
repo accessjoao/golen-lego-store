@@ -5,7 +5,7 @@
 ## The styling was done using CSS, Bootstrap, Canvas, React Icons, and Google Fonts.
 
 The functionality of this application includes using the React-router-dom to transfer between pages,
-addind and removing items from the shopping cart, and seeing each item's information when opening a Modal.
+adding and removing items from the shopping cart, and seeing each item's information when opening a Modal.
 
 
 # Getting Started
